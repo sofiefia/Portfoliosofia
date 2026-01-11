@@ -1,0 +1,349 @@
+<!-- index.html -->
+<!doctype html>
+<html lang="pt">
+<head>
+  <meta charset="utf-8">
+  <title>Portfolio | Sofia</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="is-loading">
+  <!-- ✅ FULL PAGE LOADING (não mostra NADA por baixo) -->
+  <main class="splash" id="splash" aria-label="Loading screen">
+    <div class="splash-bg" aria-hidden="true"></div>
+
+    <section class="splash-card" role="status" aria-live="polite" aria-label="Loading">
+      <div class="splash-top">
+        <div class="splash-badge" aria-hidden="true">
+          <span class="badge-dot"></span>
+          <span class="badge-text">PORTFOLIO</span>
+        </div>
+
+        <div class="splash-orbit" aria-hidden="true">
+          <span class="orbit-ring"></span>
+          <span class="orbit-ring r2"></span>
+          <span class="orbit-spark"></span>
+        </div>
+      </div>
+
+      <div class="splash-title">Sofia Barreiro</div>
+
+      <div class="splash-sub" data-i18n="loading_text">
+        A carregar portfólio…
+      </div>
+
+      <div class="splash-paws" aria-hidden="true">
+        <svg class="paw-svg" viewBox="0 0 96 48" width="54" height="32" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <g class="paw paw-left" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M16 10 C16 6.5 18.5 4.5 21 4.5 C23.5 4.5 26 6.5 26 10 C26 13 24.3 15 21 15 C17.7 15 16 13 16 10Z"/>
+            <path d="M6.5 14 C6.5 10.8 8.7 8.8 11 8.8 C13.3 8.8 15.5 10.8 15.5 14 C15.5 16.8 14 18.6 11 18.6 C8 18.6 6.5 16.8 6.5 14Z"/>
+            <path d="M26.5 14 C26.5 10.8 28.7 8.8 31 8.8 C33.3 8.8 35.5 10.8 35.5 14 C35.5 16.8 34 18.6 31 18.6 C28 18.6 26.5 16.8 26.5 14Z"/>
+            <path d="M12 26 C12 20 17.5 18.5 21 18.5 C24.5 18.5 30 20 30 26 C30 33 24.8 36 21 36 C17.2 36 12 33 12 26Z"/>
+          </g>
+
+          <g class="paw paw-right" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M64 10 C64 6.5 66.5 4.5 69 4.5 C71.5 4.5 74 6.5 74 10 C74 13 72.3 15 69 15 C65.7 15 64 13 64 10Z"/>
+            <path d="M54.5 14 C54.5 10.8 56.7 8.8 59 8.8 C61.3 8.8 63.5 10.8 63.5 14 C63.5 16.8 62 18.6 59 18.6 C56 18.6 54.5 16.8 54.5 14Z"/>
+            <path d="M74.5 14 C74.5 10.8 76.7 8.8 79 8.8 C81.3 8.8 83.5 10.8 83.5 14 C83.5 16.8 82 18.6 79 18.6 C76 18.6 74.5 16.8 74.5 14Z"/>
+            <path d="M60 26 C60 20 65.5 18.5 69 18.5 C72.5 18.5 78 20 78 26 C78 33 72.8 36 69 36 C65.2 36 60 33 60 26Z"/>
+          </g>
+        </svg>
+      </div>
+
+      <div class="splash-bar" aria-hidden="true">
+        <span class="splash-fill"></span>
+      </div>
+
+      <div class="splash-hint" aria-hidden="true">
+        <span class="hint-dot"></span>
+        <span data-i18n="loading_hint">a preparar a experiência</span>
+        <span class="hint-dot"></span>
+      </div>
+    </section>
+  </main>
+
+  <div class="mouse-gradient" aria-hidden="true"></div>
+
+  <header class="topbar" aria-label="Topo">
+    <div class="topbar-left">
+      <div id="clock" class="clock">--:--</div>
+      <div class="location">BRAGA, PORTUGAL</div>
+    </div>
+
+    <div class="topbar-actions">
+      <button class="lang-btn" id="langToggle" type="button" aria-label="Switch language">PT</button>
+
+      <button class="theme-btn" id="themeToggle" type="button" aria-label="Switch to dark mode">
+        🌙
+      </button>
+<a href="#play"
+   class="btn-touch"
+   data-i18n="btn_touch"
+   data-i18n-aria="btn_touch_aria"
+   aria-label="Get in touch">
+  GET IN TOUCH!
+</a>
+
+    </div>
+  </header>
+
+  <div class="pages" id="pages">
+
+    <!-- PÁGINA 1 -->
+    <section class="page hero" id="home">
+      <div class="polaroids" aria-label="Polaroids">
+        <div class="polaroid p1"><div class="polaroid-photo"></div><div class="polaroid-base"></div></div>
+        <div class="polaroid p2"><div class="polaroid-photo"></div><div class="polaroid-base"></div></div>
+        <div class="polaroid p3"><div class="polaroid-photo"></div><div class="polaroid-base"></div></div>
+      </div>
+
+      <h1 class="hero-title" data-i18n-html="hero_title">
+        I design cool interfaces, but mostly <br>
+        for apps & websites.
+      </h1>
+    </section>
+
+    <!-- PÁGINA 2 -->
+    <section class="page work-page" id="about">
+      <div class="work-stage" aria-label="Projetos em destaque">
+
+        <div class="work-card" data-role="left">
+          <div class="work-media"></div>
+          <div class="work-body">
+            <div class="work-kicker" data-i18n="assignment">ASSIGNMENT</div>
+            <div class="work-title" data-i18n="work_1_title">Deseed app.</div>
+          </div>
+        </div>
+
+        <div class="work-card" data-role="center" id="workCenterCard">
+          <div class="work-media"></div>
+          <div class="work-body">
+            <div class="work-kicker" data-i18n="assignment">ASSIGNMENT</div>
+            <div class="work-title" data-i18n="work_2_title">Sushi branding case study.</div>
+          </div>
+        </div>
+
+        <div class="work-card" data-role="right">
+          <div class="work-media"></div>
+          <div class="work-body">
+            <div class="work-kicker" data-i18n="assignment">ASSIGNMENT</div>
+            <div class="work-title" data-i18n="work_3_title">How I developed the Deseed app.</div>
+          </div>
+        </div>
+
+        <button class="work-arrow work-arrow-left" id="workPrev" type="button" aria-label="Projeto anterior" data-i18n-aria="work_prev">
+          <svg viewBox="0 0 24 24" class="work-arrow-ico" aria-hidden="true">
+            <path d="M14.5 5.5L8 12l6.5 6.5" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+
+        <button class="work-arrow work-arrow-right" id="workNext" type="button" aria-label="Próximo projeto" data-i18n-aria="work_next">
+          <svg viewBox="0 0 24 24" class="work-arrow-ico" aria-hidden="true">
+            <path d="M9.5 5.5L16 12l-6.5 6.5" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+
+      </div>
+    </section>
+
+    <!-- PÁGINA 3 (BIO) -->
+    <section class="page bio-page" id="work" aria-label="About me">
+      <div class="bio-wrap">
+
+        <div class="polaroids polaroids-small" aria-label="Polaroids - bio">
+          <div class="polaroid s1"><div class="polaroid-photo photo1"></div><div class="polaroid-base"></div></div>
+          <div class="polaroid s2"><div class="polaroid-photo photo2"></div><div class="polaroid-base"></div></div>
+          <div class="polaroid s3"><div class="polaroid-photo photo3"></div><div class="polaroid-base"></div></div>
+          <div class="polaroid s4"><div class="polaroid-photo photo4"></div><div class="polaroid-base"></div></div>
+        </div>
+
+        <div class="bio-text">
+          <p data-i18n="bio_p1">
+            I am Sofia (2003), a <span class="bio-accent">multi-disciplinary designer</span> based in Braga, Portugal,
+            with a focus on UX and UI design. I’m at the beginning of my journey, holding a degree in Multimedia and
+            Communication Technologies and currently pursuing a Master’s in Digital Design at IPCA, where I continue to
+            explore how design can shape clear, intuitive, and meaningful digital experiences.
+          </p>
+
+          <p data-i18n="bio_p2">
+            Outside of work, I enjoy watching movies, musicals, and series, spending time with cats whenever I get the chance,
+            discovering new types of sushi, and listening to music almost constantly.
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- PÁGINA 4 (SOCIALS) -->
+    <section class="page socials-page" id="play" aria-label="Socials">
+      <div class="socials-wrap">
+        <div class="socials-row" aria-label="Links sociais">
+
+          <a class="folder-link folder-lk" href="https://www.linkedin.com/" target="_blank" rel="noreferrer" aria-label="LinkedIn">
+            <span class="folder-stack" aria-hidden="true"></span>
+            <span class="folder-front">
+              <span class="folder-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="none">
+                  <path d="M6.5 9.5V18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                  <path d="M6.5 6.6h0.01" stroke="currentColor" stroke-width="3.2" stroke-linecap="round"/>
+                  <path d="M10.2 18v-4.6c0-1.7 1-2.8 2.4-2.8 1.4 0 2.2 1 2.2 2.6V18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M10.2 9.5v1.2" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+              </span>
+              <span class="folder-text" data-i18n="linkedin">LinkedIn</span>
+            </span>
+          </a>
+
+          <a class="folder-link folder-cv" href="resume.pdf" target="_blank" rel="noreferrer" aria-label="Resume">
+            <span class="folder-stack" aria-hidden="true"></span>
+            <span class="folder-front">
+              <span class="folder-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="none">
+                  <path d="M8 7.5h8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                  <path d="M8 11h8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                  <path d="M8 14.5h6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                  <path d="M7 4h7l3 3v13a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+                  <path d="M14 4v3a1 1 0 0 0 1 1h3" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+                </svg>
+              </span>
+              <span class="folder-text" data-i18n="resume">Resume</span>
+            </span>
+          </a>
+
+          <a class="folder-link folder-mail" href="mailto:teuemail@exemplo.com" aria-label="Email">
+            <span class="folder-stack" aria-hidden="true"></span>
+            <span class="folder-front">
+              <span class="folder-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="none">
+                  <path d="M4.5 7.5l7.1 5.2c.3.2.6.3.9.3s.6-.1.9-.3L20.5 7.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M6.5 6h11A2.5 2.5 0 0 1 20 8.5v9A2.5 2.5 0 0 1 17.5 20h-11A2.5 2.5 0 0 1 4 17.5v-9A2.5 2.5 0 0 1 6.5 6Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+                </svg>
+              </span>
+              <span class="folder-text" data-i18n="email">Email</span>
+            </span>
+          </a>
+
+        </div>
+
+        <div class="socials-hint" aria-hidden="true">
+          <span class="hint-dot"></span>
+          <span data-i18n="hover_folders">hover the folders</span>
+          <span class="hint-dot"></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- PÁGINA 5 (SKILLS) -->
+    <section class="page skills-page" id="contact" aria-label="Skills">
+      <div class="skills-wrap">
+
+        <div class="skills-header">
+          <div class="skills-kicker" data-i18n="toolkit">TOOLKIT</div>
+          <h2 class="skills-title" data-i18n="skills_title">Skills & tools I use.</h2>
+          <p class="skills-sub" data-i18n="skills_sub">
+            A mix of design + dev — I like to keep things clean, consistent, and interactive.
+          </p>
+        </div>
+
+        <div class="skills-grid" aria-label="Skills grid">
+
+          <article class="skill-card">
+            <div class="skill-top">
+              <div class="skill-badge" data-i18n="design">DESIGN</div>
+              <div class="skill-spark" aria-hidden="true"></div>
+            </div>
+
+            <div class="skill-chips">
+              <button class="chip" type="button">Figma</button>
+              <button class="chip" type="button">Illustrator</button>
+              <button class="chip" type="button">Photoshop</button>
+              <button class="chip" type="button">After Effects</button>
+              <button class="chip" type="button">Canva</button>
+              <button class="chip" type="button" data-i18n="prototyping">Prototyping</button>
+              <button class="chip" type="button" data-i18n="wireframes">Wireframes</button>
+              <button class="chip" type="button" data-i18n="design_systems">Design Systems</button>
+            </div>
+          </article>
+
+          <article class="skill-card">
+            <div class="skill-top">
+              <div class="skill-badge" data-i18n="frontend">FRONTEND</div>
+              <div class="skill-spark" aria-hidden="true"></div>
+            </div>
+
+            <div class="skill-chips">
+              <button class="chip" type="button">HTML</button>
+              <button class="chip" type="button">CSS</button>
+              <button class="chip" type="button">JavaScript</button>
+              <button class="chip" type="button">React</button>
+              <button class="chip" type="button">Next.js</button>
+              <button class="chip" type="button" data-i18n="responsive_ui">Responsive UI</button>
+              <button class="chip" type="button" data-i18n="accessibility">Accessibility</button>
+            </div>
+          </article>
+
+          <article class="skill-card">
+            <div class="skill-top">
+              <div class="skill-badge" data-i18n="extras">EXTRAS</div>
+              <div class="skill-spark" aria-hidden="true"></div>
+            </div>
+
+            <div class="skill-chips">
+              <button class="chip" type="button" data-i18n="branding">Branding</button>
+              <button class="chip" type="button" data-i18n="rebranding">Rebranding</button>
+              <button class="chip" type="button" data-i18n="ui_motion">UI Motion</button>
+              <button class="chip" type="button" data-i18n="content">Content</button>
+              <button class="chip" type="button" data-i18n="presentation">Presentation</button>
+            </div>
+          </article>
+
+        </div>
+
+        <div class="skills-bottom" aria-hidden="true"></div>
+      </div>
+    </section>
+
+  </div>
+
+  <!-- PILL -->
+  <a class="intro-pill" id="smartPill" href="#about" aria-label="Botão principal">
+    <span class="cat-icon paws" aria-hidden="true">
+      <svg class="paw-svg" viewBox="0 0 96 48" width="34" height="20" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <g class="paw paw-left" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M16 10 C16 6.5 18.5 4.5 21 4.5 C23.5 4.5 26 6.5 26 10 C26 13 24.3 15 21 15 C17.7 15 16 13 16 10Z"/>
+          <path d="M6.5 14 C6.5 10.8 8.7 8.8 11 8.8 C13.3 8.8 15.5 10.8 15.5 14 C15.5 16.8 14 18.6 11 18.6 C8 18.6 6.5 16.8 6.5 14Z"/>
+          <path d="M26.5 14 C26.5 10.8 28.7 8.8 31 8.8 C33.3 8.8 35.5 10.8 35.5 14 C35.5 16.8 34 18.6 31 18.6 C28 18.6 26.5 16.8 26.5 14Z"/>
+          <path d="M12 26 C12 20 17.5 18.5 21 18.5 C24.5 18.5 30 20 30 26 C30 33 24.8 36 21 36 C17.2 36 12 33 12 26Z"/>
+        </g>
+
+        <g class="paw paw-right" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M64 10 C64 6.5 66.5 4.5 69 4.5 C71.5 4.5 74 6.5 74 10 C74 13 72.3 15 69 15 C65.7 15 64 13 64 10Z"/>
+          <path d="M54.5 14 C54.5 10.8 56.7 8.8 59 8.8 C61.3 8.8 63.5 10.8 63.5 14 C63.5 16.8 62 18.6 59 18.6 C56 18.6 54.5 16.8 54.5 14Z"/>
+          <path d="M74.5 14 C74.5 10.8 76.7 8.8 79 8.8 C81.3 8.8 83.5 10.8 83.5 14 C83.5 16.8 82 18.6 79 18.6 C76 18.6 74.5 16.8 74.5 14Z"/>
+          <path d="M60 26 C60 20 65.5 18.5 69 18.5 C72.5 18.5 78 20 78 26 C78 33 72.8 36 69 36 C65.2 36 60 33 60 26Z"/>
+        </g>
+      </svg>
+    </span>
+
+    <span class="intro-text" id="pillText">Hi! I’m Sofia Barreiro</span>
+  </a>
+
+  <nav class="dock" aria-label="Menu principal">
+    <div class="dock-inner">
+      <a class="dock-dot is-active" href="#home" aria-label="Home" data-i18n-aria="dock_home"></a>
+      <a class="dock-dot" href="#about" aria-label="Work" data-i18n-aria="dock_work"></a>
+      <a class="dock-dot" href="#work" aria-label="About" data-i18n-aria="dock_about"></a>
+      <a class="dock-dot" href="#play" aria-label="Socials" data-i18n-aria="dock_socials"></a>
+      <a class="dock-dot" href="#contact" aria-label="Skills" data-i18n-aria="dock_skills"></a>
+    </div>
+  </nav>
+
+  <script src="app.js"></script>
+</body>
+</html>
