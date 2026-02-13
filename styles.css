@@ -271,7 +271,7 @@ html[data-theme="dark"] .btn-touch{ color: rgba(255,255,255,0.92); }
 
 /* ✅ HOME PHOTOS */
 .photo-home-1{ background-image: url("imgs/9.jpeg"); }
-.photo-home-2{ background-image: url("imgs/foto_SB.jpg"); }
+.photo-home-2{ background-image: url("imgs/foto_sb.jpg"); }
 .photo-home-3{ background-image: url("imgs/55.jpg"); }
 
 /* WORK PAGE */
@@ -1103,4 +1103,109 @@ body.is-loading .intro-pill{
   pointer-events: none;
   transition: opacity .6s ease, visibility .6s ease;
 }
+/* =========================
+   ✅ RESPONSIVE FIX — BIO ("Mais sobre mim")
+   Cola no FIM do styles.css
+========================= */
 
+/* 1) Melhor viewport em mobile (evita cortes com barras do iOS) */
+.pages{
+  height: calc(100dvh - var(--topbar-h));
+}
+.page{
+  height: calc(100dvh - var(--topbar-h));
+}
+
+/* 2) BIO: garante que nunca fica “apertado” / mal alinhado */
+.bio-page{
+  padding-top: 14px;
+  padding-bottom: calc(var(--bottom-safe) + 20px);
+}
+
+.bio-wrap{
+  width: min(980px, 100%);
+  padding: 0 6px;
+}
+
+/* 3) Texto: largura confortável em todos os dispositivos */
+.bio-text{
+  width: min(760px, 100%);
+  padding: 0 10px;
+  text-align: center;
+}
+
+/* 4) Polaroids BIO: base boa para responsivo */
+.polaroids-small{
+  width: min(760px, 100%);
+  height: auto;
+  min-height: 170px;
+  margin-top: -22px;
+  display: grid;
+  place-items: center;
+}
+
+/* 👇 quando a tela começa a apertar, deixa de tentar “forçar” 4 fotos na mesma linha */
+@media (max-width: 900px){
+  .polaroids-small{
+    margin-top: -10px;
+    min-height: 160px;
+  }
+
+  .bio-wrap{
+    gap: 22px;
+  }
+
+  .bio-text{
+    font-size: 15px;
+    line-height: 24px;
+  }
+}
+
+/* ✅ iPad / tablets: fotos em 2 colunas (muito mais clean) */
+@media (max-width: 820px){
+  .polaroids-small{
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 14px;
+    height: auto;
+    padding: 10px 6px 0;
+  }
+
+  /* tira o "absolute" para entrar no grid */
+  .polaroids-small .polaroid{
+    position: relative;
+    width: min(240px, 44vw);
+    height: 200px;
+    transform: none !important;
+    --tx: 0px !important;
+  }
+
+  .polaroids-small .polaroid:hover{
+    transform: translateY(-6px) scale(1.03) !important;
+  }
+}
+
+/* ✅ Mobile: 1 coluna (fica perfeito) */
+@media (max-width: 520px){
+  .polaroids-small{
+    grid-template-columns: 1fr;
+    gap: 12px;
+    padding: 6px 0 0;
+  }
+
+  .polaroids-small .polaroid{
+    width: min(320px, 86vw);
+    height: 210px;
+  }
+
+  .bio-text{
+    font-size: 15px;
+    line-height: 24px;
+    padding: 0 8px;
+  }
+}
+
+/* 5) Evita overflow horizontal acidental em telemóveis */
+body{
+  overflow-x: hidden;
+}
