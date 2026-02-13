@@ -271,7 +271,7 @@ html[data-theme="dark"] .btn-touch{ color: rgba(255,255,255,0.92); }
 
 /* ✅ HOME PHOTOS */
 .photo-home-1{ background-image: url("imgs/9.jpeg"); }
-.photo-home-2{ background-image: url("imgs/foto_sb.jpg"); }
+.photo-home-2{ background-image: url("imgs/foto_SB.jpg"); }
 .photo-home-3{ background-image: url("imgs/55.jpg"); }
 
 /* WORK PAGE */
@@ -1103,3 +1103,4 @@ body.is-loading .intro-pill{
   pointer-events: none;
   transition: opacity .6s ease, visibility .6s ease;
 }
+
