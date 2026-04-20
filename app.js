@@ -62,7 +62,7 @@ const I18N = {
     btn_touch: "CONTACTA-ME!",
     btn_touch_aria: "Contacta-me",
 
-    hero_title: "Crio interfaces fixes, sobretudo <br> para apps e websites.",
+    hero_title: "Faço design de interfaces, sobretudo <br> para apps e websites.",
     work_section_title: "Os meus projetos principais",
 
     assignment: "PROJETO",
